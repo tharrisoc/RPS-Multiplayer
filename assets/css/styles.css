@@ -1,0 +1,146 @@
+body {
+  background-color : #E1EDCD;
+}
+
+.container {
+
+}
+
+#logon-form {
+
+}
+
+#user-name {
+
+}
+
+#start-button {
+
+}
+
+#page-heading {
+    background-color : #BCD4B5;
+    font-family : 'Georgia', Times, 'Times New Roman', serif; 
+}
+
+#greeting-line {
+
+}
+
+#name1 {
+
+}
+
+#player-num {
+
+}
+
+#status-line {
+
+}
+
+#status-text {
+
+}
+
+#rps-row {
+
+}
+
+#player1-board {
+
+}
+
+#player2-board {
+
+}
+
+.player_name {
+
+}
+
+#player1-name {
+
+}
+
+#player2-name {
+
+}
+
+.rps-buttons {
+
+}
+
+#player1-buttons {
+
+}
+
+#player2-buttons {
+
+}
+
+#player-hand {
+
+}
+
+.hand-image {
+
+}
+
+.game-totals {
+
+}
+
+#player1-totals {
+
+}
+
+#player2-totals {
+
+}
+
+#wins1 {
+
+}
+
+#losses1 {
+
+}
+
+#ties1 {
+
+}
+
+#wins2 {
+
+}
+
+#losses2 {
+
+}
+
+#ties2 {
+
+}
+
+.game-square {
+    border-style : solid;
+    border-width : 1px;
+    border-color : #777373;
+}
+
+#outcome {
+
+}
+
+#outcome-text {
+
+}
+
+#rules-row {
+
+}
+
+#rule-text {
+
+}

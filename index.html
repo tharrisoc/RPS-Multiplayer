@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Multi-Player Rock Paper Scissors</title>
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js">
+      </script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js">
+      </script>
+    <![endif] -->
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <header class="col-md-12" id="page-heading">
+          <h2 class="text-center">Rock Paper Scissors</h2>
+        </header>
+      </div>  <!-- header row -->
+
+      <div class="row">
+        <div class="col-md-offset-4"></div>
+        <div class="col-md-4">
+          <form id="logon-form">
+            <input type="text" class="form-control" id="user-name" placeholder="Name" />
+            <button type="button" class="btn btn-sm btn-light" id="start-button">Start</button>
+          </form>
+        </div>
+        <div class="col-md-offset-4"></div>
+      </div> <!-- form row -->
+
+      <div class="row" id="greeting-line">
+        <div class="col-md-offset-4"></div>
+        <div class="col-md-4">
+          <p class="text-center">Hi <span id="name1"></span>You are Player <span id="player-num"></span></p>
+        </div>
+        <div class="col-md-offset-4"></div>
+      </div> <!-- greeting row -->
+
+      <div class="row" id="status-line">
+        <div class="col-md-offset-4"></div>
+        <div class="col-md-4"><p class="text-center" id="status-text"></p></div>
+        <div class="col-md-offset-4"></div>
+      </div> <!-- status row -->
+
+      <div class="row" id="rps-row">
+        <div class="col-md-4">
+          <div id="player1-board" class="game-square">
+            <p class="player-name text-center" id="player1-name"></p>
+
+            <div class="rps-buttons" id="player1-buttons">
+              <div class="btn-group-vertical btn-group-toggle"
+                   data-toggle="buttons"></div>
+                <p class="btn" role="button">Rock</p>
+                <p class="btn" role="button">Paper</p>
+                <p class="btn" role="button">Scissors</p>
+              </div>
+            </div>  <!-- rps-buttons -->
+
+            <div>
+              <img class="hand-image" id="player1-hand" src="" />
+            </div>
+
+            <p class="game-totals text-center" id="player1-totals">
+              Wins: <span id="wins1">0</span> Losses: <span id="losses1">0</span> Ties: <span id="ties1">0</span>
+            </p>
+          </div>
+        </div>  <!-- player 1-->
+
+        <div class="col-md-4">
+            <div id="outcome">
+              <p id="outcome-text" class="game-square"></p>
+            </div>
+        </div>  <!-- outcome -->
+  
+        <div class="col-md-4">
+          <div id="player2-board" class="game-square">
+            <p class="player-name text-center" id="player2-name"></p>
+
+            <div class="rps-buttons" id="player2-buttons">
+              <div class="btn-group-vertical btn-group-toggle"
+                   data-toggle="buttons"></div>
+                <p class="btn" role="button">Rock</p>
+                <p class="btn" role="button">Paper</p>
+                <p class="btn" role="button">Scissors</p>
+              </div>
+            </div>  <!-- rps-buttons -->
+  
+            <div>
+              <img class="hand-image" id="player2-hand" src="" />
+            </div>
+            
+            <p class="game-totals text-center" id="player2-totals">
+              Wins: <span id="wins2">0</span> Losses: <span id="losses2">0</span> Ties: <span id="ties2">0</span>
+            </p>
+          </div>
+        </div>  <!-- player 2-->
+  
+      </div>  <!-- RPS row -->
+
+      <div class="row" id="rules-row">
+        <div class="col-md-offset-2"></div>
+        <div class="col-md-8"><p id="rule-text"></p></div>  <!-- e.g. "Paper Covers Rock" -->
+        <div class="col-md-offset-2"></div>
+      </div>  <!-- rules row -->
+
+    </div>   <!-- container -->
+
+    <!-- Note: use the minified version, but *NOT* the slim minified version;
+               the slim minified version EXCLUDES Ajax -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+            
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <!-- Firebase JavaScript Link -->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+
+  </body>
+</html>
