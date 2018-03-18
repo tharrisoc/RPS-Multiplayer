@@ -32,33 +32,35 @@
       </div>  <!-- header row -->
 
       <div class="row">
-        <div class="col-md-offset-4"></div>
+        <div class="offset-md-4"></div>
         <div class="col-md-4">
           <form id="logon-form">
-            <input type="text" class="form-control" id="user-name" placeholder="Name" />
-            <button type="button" class="btn btn-sm btn-light" id="start-button">Start</button>
+          	<div class="form-group row">
+              <input type="text" class="form-control" id="user-name" placeholder="Name" />
+              <button type="button" class="btn btn-sm btn-outline-success" id="start-button">Start</button>
+            </div>
           </form>
         </div>
-        <div class="col-md-offset-4"></div>
+        <div class="offset-md-4"></div>
       </div> <!-- form row -->
 
       <div class="row" id="greeting-line">
-        <div class="col-md-offset-4"></div>
+        <div class="offset-md-4"></div>
         <div class="col-md-4">
           <p class="text-center">Hi <span id="name1"></span>You are Player <span id="player-num"></span></p>
         </div>
-        <div class="col-md-offset-4"></div>
+        <div class="offset-md-4"></div>
       </div> <!-- greeting row -->
 
       <div class="row" id="status-line">
-        <div class="col-md-offset-4"></div>
+        <div class="offset-md-4"></div>
         <div class="col-md-4"><p class="text-center" id="status-text"></p></div>
-        <div class="col-md-offset-4"></div>
+        <div class="offset-md-4-4"></div>
       </div> <!-- status row -->
 
       <div class="row" id="rps-row">
-        <div class="col-md-4">
-          <div id="player1-board" class="game-square">
+        <div class="col-md-4 game-square">          
+          <div id="player1-board">
             <p class="player-name text-center" id="player1-name"></p>
 
             <div class="rps-buttons" id="player1-buttons">
@@ -80,14 +82,14 @@
           </div>
         </div>  <!-- player 1-->
 
-        <div class="col-md-4">
+        <div class="col-md-4 game-square">
             <div id="outcome">
-              <p id="outcome-text" class="game-square"></p>
+              <p id="outcome-text"></p>
             </div>
         </div>  <!-- outcome -->
   
-        <div class="col-md-4">
-          <div id="player2-board" class="game-square">
+        <div class="col-md-4 game-square">
+          <div id="player2-board">
             <p class="player-name text-center" id="player2-name"></p>
 
             <div class="rps-buttons" id="player2-buttons">
@@ -112,10 +114,18 @@
       </div>  <!-- RPS row -->
 
       <div class="row" id="rules-row">
-        <div class="col-md-offset-2"></div>
+        <div class="offset-md-2"></div>
         <div class="col-md-8"><p id="rule-text"></p></div>  <!-- e.g. "Paper Covers Rock" -->
-        <div class="col-md-offset-2"></div>
+        <div class="offset-md-2"></div>
       </div>  <!-- rules row -->
+
+      <div class="row" id="rules-image">
+        <div class="offset-md-4"></div>
+        <div class="col-md-4">
+          <img src="./assets/img/RPSrules.png" alt="">
+        </div>
+        <div class="offset-md-4"></div>
+      </div>  <!-- rules image -->
 
     </div>   <!-- container -->
 

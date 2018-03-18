@@ -1,26 +1,55 @@
+/* DEBUG start 
+.row {
+  border-top-style : solid;
+  border-top-width: 1px;
+  border-top-color: red;
+
+  border-bottom-style : solid;
+  border-bottom-width: 1px;
+  border-bottom-color: red;
+}
+
+.col-md-4, .col-md-offset-4, .col-md-12, .col-md-offset-2, .col-md-8, .col-md-offset-3, .col-md3 {
+  border-left-style : solid;
+  border-left-width : 1px;
+  border-left-color : red;
+
+  border-right-style : solid;
+  border-right-width : 1px;
+  border-right-color : red;
+
+} 
+ DEBUG end */
+
 body {
   background-color : #E1EDCD;
 }
 
 .container {
-
+  font-family : 'Georgia', Times, 'Times New Roman', serif; 
 }
 
 #logon-form {
-
+  margin-top: 1rem;
 }
 
 #user-name {
-
+  /*display: inline; */
+  width: 10rem;
+  height: 1.4rem;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 #start-button {
-
+/*  display: inline; */
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  margin-left: 4px;
+  height: 1.4rem;
+  width: 4rem;
 }
 
 #page-heading {
     background-color : #BCD4B5;
-    font-family : 'Georgia', Times, 'Times New Roman', serif; 
 }
 
 #greeting-line {
@@ -59,6 +88,10 @@ body {
 
 }
 
+#player1-name, #player2-name {
+  font-size: small;
+}
+
 #player1-name {
 
 }
@@ -84,11 +117,12 @@ body {
 }
 
 .hand-image {
-
+  width: 59px;
+  height: 62px;
 }
 
 .game-totals {
-
+  font-size: smaller;
 }
 
 #player1-totals {
@@ -96,6 +130,10 @@ body {
 }
 
 #player2-totals {
+
+}
+
+#wins1, #losses1, #ties1, #wins2, #losses2, #ties2 {
 
 }
 
@@ -123,10 +161,22 @@ body {
 
 }
 
+.inline-square {
+  display: inline;
+}
+
 .game-square {
     border-style : solid;
     border-width : 1px;
     border-color : #777373;
+    margin: 10px;
+ 
+    width: 180px;
+    height: 160px;
+/*    width: 9.6rem;
+    height: 6.6rem; */
+
+ /*   display: inline-block; */
 }
 
 #outcome {
